@@ -1,0 +1,10 @@
+@import "mixins/breakpoint";
+@import "base";
+@import "widgets/cookie-notification-reset";
+
+#cookie-notification-reset {
+    @import "components/switcher";
+    @import "components/popup-btn";
+    @import "widgets/cookie-notification";
+    @import "widgets/modal";
+}

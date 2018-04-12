@@ -1,0 +1,34 @@
+.switcher {
+    position: relative;
+    display: block;
+    width: 33px;
+    height: 18px;
+    background-color: $off-status-color;
+    border-radius: 100px;
+    transition: background-color 300ms;
+
+    cursor: pointer;
+
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        background-color: #fff;
+        border-radius: 10px;
+        width: 14px;
+        height: 14px;
+        left: 2px;
+        top: 2px;
+        transition: left 300ms;
+    }
+
+}
+
+.activated .switcher {
+    background-color: $active-status-color;
+    &::before {
+        left: 17px;
+    }
+}
+
+

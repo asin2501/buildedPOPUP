@@ -1,0 +1,156 @@
+.cookie-notification {
+    position: fixed;
+    z-index: 99999999;
+    transform: translateZ(0);
+    display: none;
+    left: 0;
+    bottom: 0;
+    padding-top: 33px;
+    padding-bottom: 29px;
+    width: 100%;
+    background-color: $footer-bgc;
+    font-family: $font-family;
+    color: $footer-text-color;
+
+    @include breakpoint(medium) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    a {
+        display: inline;
+        transition: opacity 300ms;
+        color: $footer-text-color;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .cookie-notification__btns {
+        align-items: center;
+        display: flex;
+        padding-right: 29px;
+        padding-left: 60px;
+        flex-shrink: 0;
+
+        @include breakpoint(medium) {
+            padding-right: 0;
+            align-items: flex-end;
+        }
+
+        @include breakpoint(small) {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            display: flex;
+            margin-top: 15px;
+            padding-left: 0;
+
+            justify-content: center;
+        }
+
+    }
+
+    .cookie-notification__description {
+        font-size: $main-font-size;
+        max-width: 860px;
+
+        a {
+            text-decoration: underline;
+            color: inherit;
+        }
+
+    }
+
+    .cookie-notification__container {
+        width: 100%;
+        max-width: 1360px;
+        margin: 0 auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+
+        @include breakpoint(medium) {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        @include breakpoint(extra-small) {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        @media (max-width: 600px) {
+            display: block;
+        }
+
+    }
+
+    .cookie-notification__apply-btn {
+
+        display: block;
+        color: $footer-text-color;
+        background-color: $btnc;
+
+        border: none;
+        padding: 8px 30px;
+        outline: none;
+        font-size: $main-font-size;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        font-family: $font-family;
+        cursor: pointer;
+        transition: background-color 300ms;
+        white-space: nowrap;
+
+        &:hover {
+            background-color: $btnhoverc;
+        }
+    }
+
+    .cookie-notification__addon-btn {
+        color: $btntc;
+        padding: 5px;
+        font-family: $font-family;
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: $main-font-size;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        margin-right: 35px;
+        cursor: pointer;
+        transition: opacity 300ms;
+        white-space: nowrap;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        @include breakpoint(small) {
+            white-space: nowrap;
+            margin-left: auto;
+            margin-right: 0;
+            margin-bottom: 10px;
+            padding: 0;
+        }
+
+        @media (max-width: 600px) {
+            padding: 5px;
+            margin: 0;
+            margin-right: 30px;
+        }
+    }
+
+}

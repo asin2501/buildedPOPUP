@@ -1,0 +1,59 @@
+//$font-family: "PT Sans Narrow", sans-serif;
+//$main-font-size: 15px;
+//$popupBodyColor:#F6F6F6;
+//$popupHeadColor:#fff;
+//
+//$footer-text-color: #fff;
+//$popup-text-color: #000;
+////color of popup shadow
+//$shadow-color: rgba(0, 0, 0, 0.5);
+////green status color (switcher)
+//$active-status-color: #509006;
+////gray status color (switcher)
+//$off-status-color: #949495;
+////footer background color
+//$footer-bgc: #000;
+////button background color
+//$btnc: #f50140;
+////button hover background color
+//$btnhoverc: darken($btnc, 15%);
+////button text color
+//$btntc: #fff;
+////font size for big title on responsive
+//$big-title-fz:31px;
+//$big-title-fz-md:$big-title-fz*0.9;
+//$big-title-fz-sm:$big-title-fz*0.8;
+////small title font size
+//$small-title-fz:20px;
+
+
+$font-family: '=fontFamily=';
+$main-font-size: '=fontSize=';
+$popupBodyColor:'=popupBodyColor=';
+$popupHeadColor:'=popupHeadColor=';
+
+$footer-text-color: '=footerTextColor=';
+$popup-text-color: '=popupTextColor=';
+//color of popup shadow
+$shadow-color: '=shadowColor=';
+//green status color (switcher)
+$active-status-color: '=activeStatusColor=';
+//gray status color (switcher)
+$off-status-color: '=offStatusColor=';
+//footer background color
+$footer-bgc: '=footerBackgroundColor=';
+//button background color
+$btnc: '=buttonColor=';
+//button hover background color
+$btnhoverc: '=buttonHoverColor=';
+//button text color
+$btntc: '=buttonTextColor=';
+//font size for big title on responsive
+$big-title-fz:'=bigTitleFontSize=';
+$big-title-fz-md:'=bigTitleFontSizeMediumScreen=';
+
+$big-title-fz-sm:'=bigTitleFontSizeSmallScreen=';
+//small title font size
+$small-title-fz:'=smallTitleFontSize=';
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700');

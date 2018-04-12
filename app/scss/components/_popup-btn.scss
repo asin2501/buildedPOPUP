@@ -1,0 +1,17 @@
+.popup-btn {
+    display: none;
+    position: fixed;
+    z-index: 99999999;
+    transform: translateZ(0);
+    bottom: 0;
+    left: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: $footer-bgc;
+    font-size: 12px;
+    font-family: $font-family;
+    line-height: 33px;
+    height: 33px;
+    color: $btntc;
+    cursor: pointer;
+}
